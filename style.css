@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Spartan;
+  font-weight: 400;
+  font-size: 15;
+  color: hsl(300, 43%, 22%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  TOP */
+
+.top,
+.bot {
+  width: 75vw;
+  display: flex;
+}
+
+.top {
+  margin-bottom: 5%;
+}
+
+p {
+  line-height: 150%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 270%;
+}
+
+.top-left {
+  margin-left: auto;
+  flex: 0 1 50%;
+}
+
+.top-left h1 {
+  padding-right: 20%;
+  margin-bottom: 2%;
+}
+
+.top-left p {
+  padding-right: 5%;
+  color: hsl(303, 10%, 53%);
+}
+
+.top-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rate {
+  width: 80%;
+  font-weight: 700;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding: 3% 0 3% 5%;
+  margin-bottom: 3%;
+}
+
+.r2 {
+  margin-left: 10%;
+}
+.r3 {
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+.star {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+/* BOTTOM */
+.bot {
+  justify-content: space-between;
+}
+
+.review-box {
+  width: 32%;
+  height: fit-content;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 3%;
+  font-size: 80%;
+}
+
+.review-box p {
+  color: hsla(0, 0%, 100%, 0.767);
+}
+
+.profile p {
+  font-weight: 500;
+}
+.profile span {
+  color: hsl(333, 80%, 67%);
+  display: block;
+}
+
+.profile img {
+  width: 15%;
+  border-radius: 100%;
+  margin-right: 10%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.text {
+  line-height: 150%;
+}
+
+.b2 {
+  margin-top: 2%;
+}
+.b3 {
+  margin-top: 4%;
+}
+
+/* Background */
+
+.desktop img,
+.mobile img {
+  position: absolute;
+}
+
+.top-d,
+.top-m {
+  top: 0;
+  left: 0;
+}
+.bot-d,
+.bot-m {
+  bottom: 0;
+  right: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Mobile version */
+@media (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: contents;
+  }
+  .top{
+      margin: 25% 5% 0 5%;
+  }
+  .top,
+  .bot {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .top,
+  .top-left{
+      margin-bottom: 10%;
+  }
+
+  .top-left {
+    display: block;
+    text-align: center;
+  }
+
+  .top-left h1,
+  .top-left p {
+    padding-right: 0;
+  }
+
+  .top-left h1{
+      font-size: 190%;
+  }
+
+  .top-right {
+    flex: 0;
+    align-items: center;
+  }
+
+  .rate {
+    width: 90%;
+    text-align: center;
+    padding: 3% 0;
+  }
+
+  .r2,.r3 {
+    margin-left: 0;
+  }
+
+  .star {
+    display: block;
+    margin-right: 0;
+  }
+  /* BOT */
+
+  .bot {
+    justify-content: center;
+    margin: 0 5% 25% 5%;
+  }
+  
+  .review-box {
+    width: 100%;
+    padding: 10%;
+    font-size: 70%;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+}
